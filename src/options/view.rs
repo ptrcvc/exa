@@ -202,6 +202,7 @@ impl Columns {
 
         let permissions = ! matches.has(&flags::NO_PERMISSIONS)?;
         let filesize =    ! matches.has(&flags::NO_FILESIZE)?;
+        // strange 
         let user =        ! matches.has(&flags::NO_USER)?;
 
         Ok(Self { time_types, git, octal, blocks, group, inode, links, permissions, filesize, user })
